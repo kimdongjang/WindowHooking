@@ -1,0 +1,12 @@
+﻿<Window x:Class="Client.MemoDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MemoAdd" Height="180" Width="408" Opacity="1.0" Visibility="Visible" AllowDrop="True" WindowStyle="None" Topmost="True" MouseLeftButtonDown="Window_MouseLeftButtonDown" ResizeMode="NoResize" Background="Black">
+    <Grid Background="White" Margin="1,1,0,0">
+        <Label Content="메모를 저장할 위치에 드래그 하십시오" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.256,0.077"/>
+        <Button Name="MemoSave" Content="저장" HorizontalAlignment="Left" Margin="229,10,0,0" VerticalAlignment="Top" Width="54" Click="Save_Click" Background="White" BorderBrush="Black"/>
+        <Button Name="MemoCancel" Content="취소" HorizontalAlignment="Left" Margin="288,10,0,0" VerticalAlignment="Top" Width="54" Click="Cancle_Click" Background="White" BorderBrush="Black"/>
+        <TextBox Name="xaml_usermemo" HorizontalAlignment="Left" Height="133" Margin="10,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="387" BorderBrush="Black"/>
+        <Button Name="MemoOk" Content="확인" HorizontalAlignment="Left" Margin="347,10,0,0" VerticalAlignment="Top" Width="54" Click="MemoOk_Click" Background="White" BorderBrush="Black" />
+    </Grid>
+</Window>

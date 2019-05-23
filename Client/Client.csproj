@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2BB3DB2-E9E9-481A-B8BD-7B11731248AC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Client</RootNamespace>
+    <AssemblyName>Client</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="xaml 및 클래스\데이터\ListBoxExtenders.cs" />
+    <Compile Include="xaml 및 클래스\스크린 캡쳐\LogCapture.xaml.cs">
+      <DependentUpon>LogCapture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\레코딩 다이얼로그\OnFileDialogSetting.xaml.cs">
+      <DependentUpon>OnFileDialogSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\레코딩 다이얼로그\환경설정\ChangeDefaultKeyDialog.xaml.cs">
+      <DependentUpon>ChangeDefaultKeyDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\FTP, DB 다이얼로그\DBLogList.xaml.cs">
+      <DependentUpon>DBLogList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\레코딩 다이얼로그\일시정지\LogSaveSetting.xaml.cs">
+      <DependentUpon>LogSaveSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\레코딩 다이얼로그\SampleModule.xaml.cs">
+      <DependentUpon>SampleModule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\레코딩 다이얼로그\RecentListEdit.xaml.cs">
+      <DependentUpon>RecentListEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\레코딩 다이얼로그\ShowPlaylog.xaml.cs">
+      <DependentUpon>ShowPlaylog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\채널 다이얼로그\ChannelDialog.xaml.cs">
+      <DependentUpon>ChannelDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\채널 다이얼로그\ChannelInformation.xaml.cs">
+      <DependentUpon>ChannelInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\채널 다이얼로그\ChannelInputPassword.xaml.cs">
+      <DependentUpon>ChannelInputPassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\레코딩 다이얼로그\HelpDialog.xaml.cs">
+      <DependentUpon>HelpDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\데이터\ChannelList.cs" />
+    <Compile Include="xaml 및 클래스\채널 다이얼로그\CreateChannel.xaml.cs">
+      <DependentUpon>CreateChannel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\레코딩 다이얼로그\일시정지\PauseEvent.xaml.cs">
+      <DependentUpon>PauseEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\FTP, DB 다이얼로그\FTP Channel.xaml.cs">
+      <DependentUpon>FTP Channel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\후킹 관련 함수\키보드\Constants.cs" />
+    <Compile Include="xaml 및 클래스\후킹 관련 함수\키보드\enumKeys.cs" />
+    <Compile Include="xaml 및 클래스\후킹 관련 함수\키보드\globalKeyboardHook.cs" />
+    <Compile Include="xaml 및 클래스\후킹 관련 함수\키보드\ImportFunctions.cs" />
+    <Compile Include="xaml 및 클래스\후킹 관련 함수\마우스\MouseEventExtArgs.cs" />
+    <Compile Include="xaml 및 클래스\후킹 관련 함수\마우스\MouseHooker.cs" />
+    <Compile Include="xaml 및 클래스\스크린 캡쳐\DragCaptureWindow.xaml.cs">
+      <DependentUpon>DragCaptureWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\데이터\Control.cs" />
+    <Compile Include="xaml 및 클래스\데이터\CpuControl.cs" />
+    <Compile Include="xaml 및 클래스\데이터\Data.cs" />
+    <Compile Include="xaml 및 클래스\후킹 관련 함수\키보드\KeyboardHooking.cs" />
+    <Compile Include="xaml 및 클래스\후킹 관련 함수\마우스\MouseHooking.cs" />
+    <Compile Include="xaml 및 클래스\데이터\MyInformation.cs" />
+    <Compile Include="xaml 및 클래스\레코딩 다이얼로그\SaveFunction.cs" />
+    <Compile Include="xaml 및 클래스\레코딩 다이얼로그\일시정지\MemoDialog.xaml.cs">
+      <DependentUpon>MemoDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\네트워크\MyClient.cs" />
+    <Compile Include="xaml 및 클래스\레코딩 다이얼로그\ImageChecking.xaml.cs">
+      <DependentUpon>ImageChecking.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\레코딩 다이얼로그\초기화면\PlayInitSetting.xaml.cs">
+      <DependentUpon>PlayInitSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainRecording.xaml.cs">
+      <DependentUpon>MainRecording.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\네트워크\RecvClass.cs" />
+    <Compile Include="xaml 및 클래스\레코딩 다이얼로그\초기화면\RecordInitSetting.xaml.cs">
+      <DependentUpon>RecordInitSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\스크린 캡쳐\Screenshot.xaml.cs">
+      <DependentUpon>Screenshot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\레코딩 다이얼로그\환경설정\RecordSetting.xaml.cs">
+      <DependentUpon>RecordSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xaml 및 클래스\후킹 관련 함수\Structs.cs" />
+    <Compile Include="xaml 및 클래스\후킹 관련 함수\키보드\VirtualKeys.cs" />
+    <Page Include="xaml 및 클래스\스크린 캡쳐\LogCapture.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\레코딩 다이얼로그\OnFileDialogSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\레코딩 다이얼로그\환경설정\ChangeDefaultKeyDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\FTP, DB 다이얼로그\DBLogList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\레코딩 다이얼로그\일시정지\LogSaveSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\레코딩 다이얼로그\SampleModule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\레코딩 다이얼로그\RecentListEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\레코딩 다이얼로그\ShowPlaylog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\채널 다이얼로그\ChannelDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\채널 다이얼로그\ChannelInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\채널 다이얼로그\ChannelInputPassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\채널 다이얼로그\CreateChannel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\레코딩 다이얼로그\일시정지\PauseEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\FTP, DB 다이얼로그\FTP Channel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\스크린 캡쳐\DragCaptureWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\레코딩 다이얼로그\HelpDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignUpDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SignUpDialog.xaml.cs">
+      <DependentUpon>SignUpDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="xaml 및 클래스\레코딩 다이얼로그\일시정지\MemoDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\레코딩 다이얼로그\ImageChecking.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\레코딩 다이얼로그\초기화면\PlayInitSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainRecording.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\레코딩 다이얼로그\초기화면\RecordInitSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\스크린 캡쳐\Screenshot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xaml 및 클래스\레코딩 다이얼로그\환경설정\RecordSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Client.sln" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BitIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

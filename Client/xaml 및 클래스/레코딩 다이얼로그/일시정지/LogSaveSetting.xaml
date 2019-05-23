@@ -1,0 +1,13 @@
+﻿<Window x:Class="Client.LogSaveSetting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LogSaveSetting" Height="97" Width="574" WindowStyle="None">
+    <Grid>
+        <TextBox Name="LogData_text" HorizontalAlignment="Left" Height="26" Margin="120,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="336" BorderBrush="Black"/>
+        <TextBox Name="FileName_text" HorizontalAlignment="Left" Height="26" Margin="120,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="336" BorderBrush="Black"/>
+        <Label Content="로그 내용" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="저장할 파일이름" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top"/>
+        <Button Content="저장" HorizontalAlignment="Left" Margin="478,14,0,0" VerticalAlignment="Top" Width="78" Height="26" RenderTransformOrigin="0.45,1.009" Click="FileSaveButton_Click" Background="White" BorderBrush="Black"/>
+        <Button Content="취소" HorizontalAlignment="Left" Margin="478,47,0,0" VerticalAlignment="Top" Width="78" Height="26" Click="CancelButton_Click" Background="White" BorderBrush="Black"/>
+    </Grid>
+</Window>

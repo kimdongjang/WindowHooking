@@ -1,0 +1,9 @@
+﻿<Window x:Class="Client.ShowPlaylog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ShowList" Height="300" Width="300" Opacity="1.0" Visibility="Visible" AllowDrop="True" WindowStyle="None">
+    <Grid>
+        <ListBox Name="S_List" HorizontalAlignment="Left" Height="272" VerticalAlignment="Top" Width="272" Foreground="White" OpacityMask="#FFAA2B2B" Background="#FF747474" Margin="10,10,0,0" BorderBrush="Black"/>
+
+    </Grid>
+</Window>

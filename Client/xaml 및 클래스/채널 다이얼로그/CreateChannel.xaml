@@ -1,0 +1,16 @@
+﻿<Window x:Class="Client.CreateChannel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CreateChannel" Height="301" Width="272">
+    <Grid>
+        <Label Content="채널명" HorizontalAlignment="Left" Margin="54,32,0,0" VerticalAlignment="Top"/>
+        <Label Content="인원제한" HorizontalAlignment="Left" Margin="42,63,0,0" VerticalAlignment="Top" Height="26"/>
+        <TextBox Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="113,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="White" BorderBrush="Black" Foreground="Black"/>
+        <TextBox Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="113,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="textBox2_PreviewTextInput" Background="White" BorderBrush="Black" Foreground="Black"/>
+        <Button Content="생성" HorizontalAlignment="Left" Margin="47,225,0,0" VerticalAlignment="Top" Width="186" Click="RequestCreateChannelButton" BorderBrush="Black" Height="27" Background="White" Foreground="Black"/>
+        <CheckBox x:Name="PWcheckBox" Content="비밀번호" HorizontalAlignment="Left" Margin="25,102,0,0" VerticalAlignment="Top" Width="75" Click="PWcheckBox_Click" BorderBrush="Black"/>
+        <Label Content="설명" HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="70" Margin="47,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Background="White" BorderBrush="Black" Foreground="Black"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="113,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="textBox3_PreviewTextInput" IsEnabled="False" TabIndex="4" Background="White" BorderBrush="Black" Foreground="Black"/>
+    </Grid>
+</Window>

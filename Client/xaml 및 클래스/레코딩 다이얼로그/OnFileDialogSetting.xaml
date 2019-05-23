@@ -1,0 +1,13 @@
+﻿<Window x:Class="Client.OnFileDialogSetting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="OnFileDialogSetting" Height="157" Width="459" WindowStyle="None" Topmost="True" MouseLeftButtonDown="Window_MouseLeftButtonDown" ResizeMode="NoResize" >
+    <Grid Background="#FF252222" Margin="2,2,2,2">
+        <Label Content="불러오거나 저장할 파일 이름 및 설명" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox Name="xaml_editdata" HorizontalAlignment="Left" Height="102" Margin="10,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="437"/>
+        <Button Name="xaml_save" Content="저장" HorizontalAlignment="Left" Margin="278,16,0,0" VerticalAlignment="Top" Width="53" Click="Save_Click" BorderBrush="Black" Background="White"/>
+        <Button Name="xaml_cancel" Content="취소" HorizontalAlignment="Left" Margin="336,16,0,0" VerticalAlignment="Top" Width="53" Click="Cancle_Click" BorderBrush="Black" Background="White"/>
+        <Button Name="xaml_confirm" Content="확인" HorizontalAlignment="Left" Margin="394,16,0,0" VerticalAlignment="Top" Width="53" Click="Confirm_Click" BorderBrush="Black" Background="White"/>
+
+    </Grid>
+</Window>

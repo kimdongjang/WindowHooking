@@ -1,0 +1,34 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Client.RecordInitSetting"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="RecSet" Height="268" Width="494"  Visibility="Visible" AllowDrop="True"  ResizeMode="NoResize" WindowStyle="None" Topmost="True" MouseLeftButtonDown="Window_MouseLeftButtonDown" Background="Black">
+    <Grid Background="White" Margin="1,1,0,-41" Height="267" VerticalAlignment="Top" HorizontalAlignment="Left" Width="493">
+        <Button Content="확인" BorderBrush="Black" HorizontalAlignment="Left" Margin="322,237,0,0" VerticalAlignment="Top" Width="75" Click="Ok_Click" Background="{x:Null}"/>
+        <Button Content="취소" BorderBrush="Black" HorizontalAlignment="Left" Margin="402,237,0,0" VerticalAlignment="Top" Width="75" Click="Cancel_Click" Background="{x:Null}"/>
+        <Label Content="목록" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="2.59,2.538" Margin="10,5,0,0" Width="34"/>
+        <Label Content="내용" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="2.59,2.538" Margin="10,34,0,0"/>
+        <TextBox Name="Content_textBox" BorderBrush="Black" TextWrapping="Wrap" Text="" AllowDrop="True"  VerticalAlignment="Top" Margin="49,39,0,0" Height="21" HorizontalAlignment="Left" Width="290"/>
+        <Button Content="추가" BorderBrush="Black" HorizontalAlignment="Left" Margin="348,39,0,0" VerticalAlignment="Top" Width="61" Click="Add_Click" Height="21" Background="{x:Null}"/>
+        <Button Content="삭제" BorderBrush="Black" HorizontalAlignment="Left" Margin="416,39,0,0" VerticalAlignment="Top" Width="61" Click="Delete_Click" Height="21" Background="{x:Null}"/>
+        <ListView Name ="listView" BorderBrush="Black" HorizontalAlignment="Left" Height="157" Margin="10,65,0,0" VerticalAlignment="Top" Width="467">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="목록" Width="150" DisplayMemberBinding="{Binding Path=Col1}"/>
+                    <GridViewColumn Header="내용" Width="310" DisplayMemberBinding="{Binding Path=Col2}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ComboBox Name="List_textBox" BorderBrush="Black" Text="사용된 프로그램" HorizontalAlignment="Left" Margin="49,7,0,0" VerticalAlignment="Top" Width="135" SelectionChanged="List_textBox_SelectionChanged" IsEditable="True" IsReadOnly="True">
+            <ComboBox.Items>
+                <ComboBoxItem Content="사용된 프로그램"/>
+                <ComboBoxItem Content="프로젝트 이름"/>
+                <ComboBoxItem Content="프로젝트 타입"/>
+                <ComboBoxItem Content="도구상자"/>
+                <ComboBoxItem Content="[사용자 정의]"/>
+            </ComboBox.Items>
+        </ComboBox>
+        <Image Name="Init_Image" Margin="0,3,0,-3" RenderTransformOrigin="0.5,0.5"/>
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+﻿<Window x:Class="Client.RecentListEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RecentListEdit" Height="325" Width="642">
+    <Grid>
+        <Button Content="파일추가" HorizontalAlignment="Left" Margin="308,264,0,0" VerticalAlignment="Top" Width="75" Click="FileAdd_Click"/>
+        <Button Content="선택목록삭제" HorizontalAlignment="Left" Margin="468,264,0,0" VerticalAlignment="Top" Width="75" Click="SelectDelete_Click"/>
+        <Button Content="닫기" HorizontalAlignment="Left" Margin="548,264,0,0" VerticalAlignment="Top" Width="75" Click="CloseButton_Click"/>
+        <Button Content="전체삭제" HorizontalAlignment="Left" Margin="388,264,0,0" VerticalAlignment="Top" Width="75" Click="AllDelete_Click"/>
+        <Button Content="▲" HorizontalAlignment="Left" Margin="10,264,0,0" VerticalAlignment="Top" Width="22" Click="Up_Update_Click"/>
+        <Button Content="▼" HorizontalAlignment="Left" Margin="32,264,0,0" VerticalAlignment="Top" Width="22" Click="Down_Update_Click"/>
+
+    </Grid>
+</Window>

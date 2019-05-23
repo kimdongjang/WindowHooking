@@ -1,0 +1,20 @@
+﻿<Window x:Class="Client.SignUpDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Join" Height="313.464" ResizeMode="NoResize" Width="321.708" WindowStyle="None">
+
+    <Grid Background="#FF252222" MouseLeftButtonDown="Grid_MouseLeftButtonDown" Margin="2,2,2,2" HorizontalAlignment="Left" Width="320">
+        <Label Content="Sign Up" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="101,17,0,0" FontSize="25"/>
+        <Label Content="I     D" HorizontalAlignment="Left" Margin="18,83,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="PASSWORD" HorizontalAlignment="Left" Margin="18,120,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="NAME" HorizontalAlignment="Left" Margin="18,152,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="PHONE" HorizontalAlignment="Left" Margin="18,186,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox Name="idTxt" HorizontalAlignment="Left" Height="23" Margin="97,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox Name="pwTxt" PasswordChar="*" HorizontalAlignment="Left" Height="23" Margin="97,120,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="nameTxt" HorizontalAlignment="Left" Height="23" Margin="97,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="phoneTxt" HorizontalAlignment="Left" Height="23" Margin="97,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Style="{StaticResource NavyButton}" Content="중복확인" HorizontalAlignment="Left" VerticalAlignment="Top" Width="67" RenderTransformOrigin="1.133,3" Margin="226,86,0,0" Click="IDCheck_Click" IsDefault="True" Height="23"/>
+        <Button Style="{StaticResource NavyButton}" Content="O K" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.133,3" Margin="155,272,0,0" Click="Button_Click" Height="27"/>
+        <Button Style="{StaticResource NavyButton}" Content="CANCLE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.133,3" Margin="235,272,0,0" Click="Exit_Click" Height="27"/>
+    </Grid>
+</Window>
